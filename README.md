@@ -16,7 +16,7 @@ This Docker image is based on the [phusion/baseimage](https://hub.docker.com/r/p
 * Set hostname using ```-h HOSTNAME``` or using env var ```NEW_RELIC_SYSMOND_HOST```.
 
 ```bash
-docker run -d -e HOSTNAME=$(hostname) -e NEW_RELIC_LICENSE_KEY=0000000000111111111122222222223333333333 -v /var/run/docker.sock:/var/run/docker.sock -v /proc:/proc -v /dev:/dev -v /sys:/sys --privileged paralin/newrelic-sysmond:v1
+docker run -d -e HOSTNAME=$(hostname) -e NEW_RELIC_LICENSE_KEY=0000000000111111111122222222223333333333 -v /var/run/docker.sock:/var/run/docker.sock -v /proc:/proc -v /dev:/dev -v /sys:/sys --privileged paralin/newrelic-sysmond:v2
 ```
 
 ### With Kubernetes

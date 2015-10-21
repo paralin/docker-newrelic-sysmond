@@ -14,5 +14,5 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN mkdir /etc/service/newrelic
-ADD newrelic.sh /etc/service/newrelic/run/newrelic.sh
-RUN chmod +x /etc/service/newrelic/run/newrelic.sh
+ADD newrelic.sh /etc/service/newrelic/run
+RUN chmod +x /etc/service/newrelic/run
